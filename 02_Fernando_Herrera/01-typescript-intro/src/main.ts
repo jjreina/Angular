@@ -5,8 +5,9 @@ import "./style.css";
 // import "./topics/04-homework-types";
 // import "./topics/05-destructuring";
 // import "./topics/06-function-destructuring";
-//import "./topics/07-import-export";
-import "./topics/08-classes";
+// import "./topics/07-import-export";
+// import "./topics/08-classes";
+import "./topics/09-generics";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 Hello World!!!
