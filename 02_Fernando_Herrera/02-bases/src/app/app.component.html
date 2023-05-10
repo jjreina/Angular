@@ -1,3 +1,9 @@
 <h1>{{ title }}</h1>
 <hr />
 <h3>Counter: {{ counter }}</h3>
+<button (click)="increaseCounter()">Add</button>
+<button (click)="decreaseCounter()">Subtract</button>
+<button (click)="resetCounter()">Reset</button>
+<button (click)="behaviorCounter(1)">+1</button>
+<button (click)="behaviorCounter(-1)">-1</button>
+<hr>
