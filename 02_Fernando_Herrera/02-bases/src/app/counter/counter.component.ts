@@ -9,20 +9,25 @@ import { Component } from '@angular/core';
     <button (click)="resetCounter()">Reset</button>
     <button (click)="behaviorCounter(1)">+1</button>
     <button (click)="behaviorCounter(-1)">-1</button>
-  `
+  `,
 })
-
 export class CounterComponent {
-  protected counter: number = 10
-  constructor() { }
+  protected counter: number = 10;
+  constructor() {}
 
-  increaseCounter = (): void => { this.counter++ }
+  increaseCounter = (): void => {
+    this.counter++;
+  };
 
-  decreaseCounter = (): void => { this.counter-- }
+  decreaseCounter = (): void => {
+    this.counter--;
+  };
 
-  resetCounter = (): void => { this.counter = 0 }
+  resetCounter = (): void => {
+    this.counter = 0;
+  };
 
   behaviorCounter = (value: number): void => {
-    this.counter += value
-  }
+    this.counter += value;
+  };
 }
