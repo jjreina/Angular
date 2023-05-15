@@ -13,4 +13,9 @@ export class ListComponent {
     'She Hulk',
     'Thor',
   ];
+  public deletedHero: string | undefined;
+
+  removeLastHero(): void {
+    this.deletedHero = this.heroNames.pop();
+  }
 }
