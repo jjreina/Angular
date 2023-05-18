@@ -1,6 +1,12 @@
-<img src="/assets/items/headphones.jpg" alt="Auriculares" class="thumbnail" />
+<img
+  src="/assets/items/{{ cartItem.imageUrl }}"
+  alt="{{ cartItem.name }}"
+  class="thumbnail"
+/>
 <div class="info">
-  <span>Auriculares</span>
-  <span class="info-price">00.00 €</span>
+  <span>{{ cartItem.name }}</span>
+  <span class="info-price">{{ cartItem.price }} €</span>
 </div>
-<button><img src="/assets/items/close.svg" alt="Eliminar artículo" /></button>
+<button (click)="onDeleteClicked()">
+  <img src="/assets/items/close.svg" alt="Eliminar artículo" />
+</button>
