@@ -20,4 +20,13 @@ export class MainPageComponent {
       power: 7500,
     },
   ];
+
+  onNewCharacter(newCharacter: Character): void {
+    console.log(newCharacter.name, newCharacter.power);
+    this.characters.push(newCharacter);
+  }
+
+  onDeleteCharacer(indexCharacter: number): void {
+    this.characters.splice(indexCharacter, 1);
+  }
 }
