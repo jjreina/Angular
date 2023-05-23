@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #5e00ea;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 15px 50px 15px 50px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
