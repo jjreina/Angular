@@ -9,13 +9,9 @@ export class HeaderShoppingCartComponent {
   private cartOrProduct: boolean = true;
 
   @Output()
-  toggleCartVisibility: EventEmitter<boolean> = new EventEmitter<boolean>();
+  toggleCartVisibility: EventEmitter<void> = new EventEmitter<void>();
 
   onCartClicked(): void {
-    if (this.cartOrProduct) {
-      this.toggleCartVisibility.emit(!this.cartOrProduct);
-    } else {
-      this.toggleCartVisibility.emit(!this.cartOrProduct);
-    }
+    this.toggleCartVisibility.emit();
   }
 }
