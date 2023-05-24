@@ -6,8 +6,6 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderShoppingCartComponent {
-  private cartOrProduct: boolean = true;
-
   @Output()
   toggleCartVisibility: EventEmitter<void> = new EventEmitter<void>();
 
