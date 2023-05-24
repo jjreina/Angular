@@ -1,1 +1,11 @@
-<app-shopping-cart class="container"></app-shopping-cart>
+<div class="container">
+  <shopping-cart-header
+    (toggleCartVisibility)="toggleCartVisibility()"
+  ></shopping-cart-header>
+  <app-shopping-cart
+    *ngIf="isCartVisible; else CatalogComponent"
+  ></app-shopping-cart>
+  <ng-template #CatalogComponent>
+    <app-catalog-product></app-catalog-product>
+  </ng-template>
+</div>

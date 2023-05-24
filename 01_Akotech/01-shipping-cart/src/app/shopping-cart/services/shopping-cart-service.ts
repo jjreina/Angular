@@ -31,6 +31,6 @@ export class ShoppingCardService {
   public totalCalculate(items: CartItem[]): number {
     // return this.cartItems.reduce((acc, item) => (acc = +item.price), 0);
     // Destructuring
-    return items.reduce((acc, { price }) => (acc = +price), 0);
+    return items.reduce((acc, { price }) => (acc += price), 0);
   }
 }
