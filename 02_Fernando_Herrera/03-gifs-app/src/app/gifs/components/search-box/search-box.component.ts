@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { ElementRef } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'gifs-search-box',
-  template: `
-    <h5>Search:</h5>
-    <input type="text" class="form-control" placeholder="Searc gifs..." />
-  `,
+  templateUrl: './search-box.component.html',
 })
 export class SearchBoxComponent {
+  @ViewChild('txtTagInput')
+  public tagInput!: ElementRef<HTMLInputElement>;
+
   constructor() {}
+
+  searchTag() {
+    const newTag: string = this.tagInput.nativeElement.value;
+    console.log(newTag);
+  }
 }
