@@ -3,6 +3,8 @@ import { Injectable } from '@angular/core';
 @Injectable({ providedIn: 'root' })
 export class GifsService {
   private _tagsHistory: string[] = [];
+  private apiKey: string =
+    'api.giphy.com/v1/gifs/search?api_key=jRGKYC6l6ptb7bkr7mStG8swLv6FmB12&q=valorant&limit=2';
   constructor() {}
 
   get tagsHistory(): string[] {
